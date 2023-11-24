@@ -1,0 +1,30 @@
+@mixin info {
+	position: absolute;
+	left: -35px;
+	top: 0;
+	width: 21px;
+	height: 21px;
+	flex-shrink: 0;
+}
+
+@mixin decorNumber {
+	position: absolute;
+	text-align: center;
+	font-family: var(--font-accent);
+	font-size: 400px;
+	font-weight: 700;
+	opacity: 0.02;
+	z-index: -1;
+}
+
+@mixin mediaLaptop {
+	@media (max-width: 1439px) {
+		@content
+	}
+}
+
+@mixin mediaTablet {
+	@media (max-width: 999px) {
+		@content
+	}
+}

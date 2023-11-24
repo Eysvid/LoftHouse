@@ -1,0 +1,32 @@
+.feedback {
+    padding-bottom: 180px;
+    
+    @include mediaLaptop {
+        padding-bottom: 80px;
+    }
+
+    @include mediaTablet {
+        padding-bottom: 30px;
+    }
+}
+
+.feedback__title {
+    margin-bottom: 38px;
+
+    @include mediaTablet {
+        margin-bottom: 20px;
+    }
+}
+
+.feedback__form {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap:  30px;
+
+    @include mediaLaptop {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 30px;
+    }
+}
